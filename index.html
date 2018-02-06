@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,38 @@
     <title>Document</title>
 
     <style>
-    
-    
+        .box {
+            width: 100px;
+            height: 20px;
+            background-color: grey;
+            margin: 2px;
+        }
+
+        .box2 {
+            height: 20px;
+            background-color: grey;
+            margin: 2px;
+        }
+
+        .box3 {
+            height: 20px;
+            background-color: grey;
+            margin: 2px;
+
+        }
     </style>
 </head>
+
 <body>
-    
+
+
+    <main id="main">
+
+    </main>
+
+    <div id="two">
+
+    </div>
 
 
 
@@ -20,154 +47,298 @@
 
 
 
-// Display the numbers from 1 to 20. (1, 2, 3, ...,19, 20)
+        // 1. Display the numbers from 1 to 20. (1, 2, 3, ...,19, 20)
 
-for (let i = 1; i <= 20; i++){
-document.write(i + " ");
-}
+        for (let i = 1; i <= 20; i++) {
+            document.write(i + " ");
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-// Display the even numbers from 1 to 20. (2, 4, 6, ..., 18, 20)
+        // 2. Display the even numbers from 1 to 20. (2, 4, 6, ..., 18, 20)
 
-for (let i = 1; i <= 20; i++){
+        for (let i = 1; i <= 20; i++) {
 
-    if (i % 2 == 0){
-        document.write(i + " ");
-    }
+            if (i % 2 == 0) {
+                document.write(i + " ");
+            }
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-// Display the odd numbers from 1 to 20. (1, 3, 5, ..., 17, 19)                           COME BACK TO THIS
+        // 3. Display the odd numbers from 1 to 20. (1, 3, 5, ..., 17, 19)
 
-for (let i = 1; i <= 20; i++){
+        for (let i = 1; i <= 20; i++) {
 
-if ((i % 2) !== 0){
-    document.write(i + " ");
-}
+            if ((i % 2) !== 0) {
+                document.write(i + " ");
+            }
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-//Display the multiples of 5 up to 100. (5, 10, 15, ..., 95, 100)
+        // 4. Display the multiples of 5 up to 100. (5, 10, 15, ..., 95, 100)
 
-for (let i = 1; i <= 100; i++ ){
+        for (let i = 1; i <= 100; i++) {
 
-    if (i % 5 == 0){
-        document.write(i + " ");
-    }
+            if (i % 5 == 0) {
+                document.write(i + " ");
+            }
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-//Display the square numbers (Links to an external site.)Links to an external site. up to 100. (1, 4, 9, ..., 81, 100)
+        // 5. Display the square numbers (Links to an external site.)Links to an external site. up to 100. (1, 4, 9, ..., 81, 100)
 
-for (let i = 1; i <= 10; i++ ){
+        for (let i = 1; i <= 10; i++) {
 
-    document.write(i*i + " ");
+            document.write(i * i + " ");
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-//Display the numbers counting backwards from 20 to 1. (20, 19, 18, ..., 2, 1)
+        // 6. Display the numbers counting backwards from 20 to 1. (20, 19, 18, ..., 2, 1)
 
-for (let i = 20; i > 0; i-=1 ){
+        for (let i = 20; i > 0; i -= 1) {
 
-document.write(i + " ");
+            document.write(i + " ");
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-//Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)
+        // 7. Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)
 
-for (let i = 20; i > 0; i-=1 ){
+        for (let i = 20; i > 0; i -= 1) {
 
-if (i % 2 == 0){
-    document.write(i + " ");
-}
+            if (i % 2 == 0) {
+                document.write(i + " ");
+            }
 
-}
+        }
 
-document.write("<br>");
+        document.write("<hr>");
 
-//Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)
+        // 8. Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)
 
-for (let i = 20; i > 0; i-=1 ){
+        for (let i = 20; i > 0; i -= 1) {
 
-if ((i % 2) !== 0){
-    document.write(i + " ");
-}
+            if ((i % 2) !== 0) {
+                document.write(i + " ");
+            }
 
-}
+        }
 
-document.write("<br>");
-
-
-//Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)
-
-for (let i = 100; i > 0; i-=1 ){
-
-if (i % 5 == 0){
-    document.write(i + " ");
-}
-
-}
-
-document.write("<br>");
-
-//Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)
-
-for (let i = 10; i > 0; i-=1 ){
+        document.write("<hr>");
 
 
-    document.write(i*i + " ");
+        // 9. Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)
+
+        for (let i = 100; i > 0; i -= 1) {
+
+            if (i % 5 == 0) {
+                document.write(i + " ");
+            }
+
+        }
+
+        document.write("<hr>");
+
+        // 10. Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)
+
+        for (let i = 10; i > 0; i -= 1) {
+
+            document.write(i * i + " ");
+
+        }
+
+        document.write("<hr>");
+
+        // 11. Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)
+
+        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940,
+            472
+        ];
 
 
-}
+        document.write(sampleArray);
 
-document.write("<br>")
+        document.write("<hr>");
 
-//Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)
-
-const sampleArray = [28, 3, 84, 31, 67, 2]
-
-document.write(sampleArray);
-
-document.write("<br>")
-
-//Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)
-
-for (let i = 0; i < sampleArray.length; i++) { 
-
-    if (sampleArray[i] % 2 === 0){
-        document.write(sampleArray[i] + " ");
-    }
-
-}
-
-document.write("<br>")
-
-//Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)
-//Display the square of each element in sampleArray. (219961, 570025, ..., 222784)
-//Display the sum of all the numbers from 1 to 20.
-//Display the sum of all the elements in sampleArray.
-//Display the smallest element in sampleArray.
-//Display the largest element in sampleArray.
-//Display 20 solid gray rectangles, each 20px high and 100px wide.
-//Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
-//Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
-//As in #21, but alternate colors so that every other rectangle is red.
-//As in #21, but color the rectangles with even widths red. 
+        // 12. Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)
 
 
+        for (let i = 0; i < sampleArray.length; i++) {
+
+            if (sampleArray[i] % 2 === 0) {
+                document.write(sampleArray[i] + " ");
+            }
+
+        }
+
+        document.write("<hr>");
+
+        // 13. Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)
+
+
+        for (let i = 0; i < sampleArray.length; i++) {
+
+            if ((sampleArray[i] % 2) !== 0) {
+                document.write(sampleArray[i] + " ");
+            }
+
+        }
+
+        document.write("<hr>");
+
+        // 14. Display the square of each element in sampleArray. (219961, 570025, ..., 222784)
+
+
+        for (let i = 0; i < sampleArray.length; i++) {
+            document.write(sampleArray[i] * sampleArray[i] + " ")
+        }
+
+        document.write("<hr>");
+
+        // 15. Display the sum of all the numbers from 1 to 20.
+
+        let sumTotal = 0;
+
+        for (let i = 1; i <= 20; i++) {
+            sumTotal += i;
+
+        }
+        document.write(sumTotal)
+
+
+        document.write("<hr>");
+
+
+        // 16. Display the sum of all the elements in sampleArray.
+
+        function sum(array) {
+            let s = 0;
+
+            for (let i = 0; i < sampleArray.length; i++) {
+                s += array[i];
+            }
+            document.write(s);
+        }
+
+        sum(sampleArray)
+
+
+        document.write("<hr>");
+
+        // 17. Display the smallest element in sampleArray.
+
+
+        document.write(Math.min.apply(null, sampleArray));
+
+        document.write("<hr>");
+
+        // 18. Display the largest element in sampleArray.
+
+
+        document.write(Math.max.apply(null, sampleArray));
+
+        document.write("<hr>");
+
+        // 19. Display 20 solid gray rectangles, each 20px high and 100px wide.
+
+
+        for (let i = 1; i <= 20; i++) {
+            var newBox = document.createElement("div");
+            newBox.className = "box";
+
+            var destination = document.getElementById("main");
+            destination.appendChild(newBox);
+
+        }
+
+        // 20. Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
+
+        for (let i = 1; i <= 20; i++) {
+            var newBox = document.createElement("div");
+            newBox.className = "box2";
+
+            var destination = document.getElementById("main");
+            destination.appendChild(newBox);
+
+            let width = i * 5;
+            newBox.style.width = 105 + width + "px";
+        }
+
+
+        // 21. Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
+
+
+        function newWidth(arr) {
+            for (let i = 0; i < sampleArray.length; i++) {
+                var newBoxC = document.createElement("div");
+                newBoxC.className = "box3";
+
+                var destinationB = document.getElementById("two");
+                destinationB.appendChild(newBoxC);
+
+                newBoxC.style.width = arr[i] + "px";
+            }
+        }
+
+        newWidth(sampleArray)
+
+
+        //22. As in #21, but alternate colors so that every other rectangle is red.
+
+        function newRed(arr) {
+            for (let i = 0; i < sampleArray.length; i++) {
+                var newBoxC = document.createElement("div");
+                newBoxC.className = "box3";
+
+                var destinationB = document.getElementById("two");
+                destinationB.appendChild(newBoxC);
+
+                newBoxC.style.width = arr[i] + "px";
+
+                if (i % 2 == 0) {
+                    newBoxC.style.backgroundColor = "red";
+                }
+            }
+        }
+
+        newRed(sampleArray)
+
+
+
+        //23. As in #21, but color the rectangles with even widths red (orange).
+
+
+        function newEven(arr) {
+            for (let i = 0; i < sampleArray.length; i++) {
+                var newBoxC = document.createElement("div");
+                newBoxC.className = "box3";
+
+                var destinationB = document.getElementById("two");
+                destinationB.appendChild(newBoxC);
+
+                newBoxC.style.width = arr[i] + "px";
+
+                if (arr[i] % 2 === 0) {
+                    newBoxC.style.backgroundColor = "orange";
+                }
+
+                
+            }
+        }
+
+        newEven(sampleArray)
 
 
     </script>
 </body>
+
 </html>
